@@ -1,0 +1,80 @@
+.email-client {
+  display: flex;
+  max-height: 80vh;
+  font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
+}
+.email-list {
+  flex: 0 0 30%;
+  overflow-y: auto;
+  font-family: 'Poppins';
+  overflow-x: hidden;
+  border-right: 1px solid #ccc;
+}
+.email-item {
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+.email-item:hover {
+  background-color: #F9F9F9;
+}
+.email-content {
+  flex: 1;
+  overflow-y: hidden;
+}
+.email-search{
+  width: 30%;
+  padding-left: 8px;
+  font-family: 'Poppins';
+  border-style: solid;
+  border-color: #D9D9D9;
+
+}
+.email-button{
+  width: 100%;
+  background-color: #6254B6;
+  font-family: 'Poppins';
+
+}
+.layout{
+  font-family: 'Poppins';
+}
+.card-outlook{
+  font-family: 'Poppins';
+
+}
+.title-outlook{
+  font-size: 20px;
+  color: #6254B6;
+  font-family: 'Poppins';
+
+}
+.email-index{
+  font-size: 20px;
+  color: #6254B6;
+
+  font-family: 'Poppins';
+}
+.email-name{
+  font-size: 15px;
+  font-family: 'Poppins';
+}
+.email-person{
+  font-family: 'Poppins';
+
+}
+.line-gap{
+width: 100%;
+margin-right: 10px;
+}
+.email-received{
+  font-family: 'Poppins';
+  height: 100%;
+
+}
+.email-background{
+background-color: #EBF6FF;
+border-radius: 20px;
+}
+.loader{
+margin: auto;
+}

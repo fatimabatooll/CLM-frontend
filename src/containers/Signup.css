@@ -1,0 +1,46 @@
+.sign-up-main{
+    background-color: #EBF6FF;
+    width: auto;
+    gap: 30px;
+    padding-bottom: 10px;
+    height: 100vh;
+    font-family: 'Poppins';}
+    
+    .signup-form{
+        background-color: #fff;
+        padding: 20px;
+        position: relative;
+        top: 8%;
+        width: 75%;
+        left: 16%;
+        border-radius: 15px;
+    }
+    .signup-img-main {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 5%;
+            
+    }
+    .signup-img-main img{
+        width: 40%;
+        margin-left: 30px;
+    }
+    .signup-heading{
+        color: "#07224D";
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 25px;
+    }
+    .signup-main-heading{
+        color: #8A8A95;
+        font-size: 16px;
+        line-height: 19.2px;
+        font-family: 'Poppins';
+    }
+
+    .docvault-signup{
+        margin-top: 10%;
+        position: relative;
+        left: 12%;
+    }

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Security-Policy" content="frame-ancestors http://127.0.0.1:3000/ http://127.0.0.1:8000/ https://apps-d.docusign.com https://demo.docusign.net">
+  <title>DocVault</title>
+  <style>
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+      font: 13px Helvetica, Arial, sans-serif;
+      background-color: #F4F4F4;
+      margin-right: 60px;
+      transform: scale(1.0); /* Adjust the scale value as needed */
+      margin-bottom: 50px;
+    }
+
+    .docusign-agreement {
+      width: 80%;
+      height: 1000px;
+      margin: 20px auto;
+      margin-top: 50px;
+      margin-right: 60px;
+
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+  </header>
+  <div class="docusign-agreement" id="agreement"></div>
+  <script src="https://js.docusign.com/bundle.js"></script>
+  <script>
+    function openDocumentWithUrl(url) {
+      window.DocuSign.loadDocuSign('f59464e0-2bf4-43c3-af7d-d33a53276f7f').then((docusign) => {
+        const signing = docusign.signing({
+          url: url,
+          displayFormat: 'focused',
+          style: {
+            branding: {
+              primaryButton: {
+                backgroundColor: '#333',
+                color: '#fff',
+                border: '1px solid #333',
+                borderRadius: '5px',
+              }
+            },
+            signingNavigationButton: {
+              finishText: 'Click here to complete signing process',
+              position: 'bottom-center',
+              backgroundColor: '#03A1D8',
+              color: '#03A1D8',
+              border: '1px solid #333',
+              borderRadius: '5px',
+              padding: '10px',
+            }
+          },
+        });
+        signing.on('ready', (event) => {
+          console.log('UI is rendered');
+          signing.startSigning();
+        });
+        signing.on('sessionEnd', (event) => {
+          console.log('sessionend', event);
+          window.location.href = '/aftersigning';
+        });
+        signing.mount('#agreement');
+      }).catch((ex) => {
+        console.error('DocuSign configuration error:', ex);
+      });
+    }
+    const queryParams = new URLSearchParams(window.location.search);
+    const documentUrl = queryParams.get('doc');
+    console.log('Document URL:', documentUrl);
+    if (documentUrl) {
+      console.log('Calling openDocumentWithUrl...');
+      openDocumentWithUrl(documentUrl);
+    }
+  </script>
+</body>
+</html>

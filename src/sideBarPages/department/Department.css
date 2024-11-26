@@ -1,0 +1,17 @@
+.department{
+    text-align: center;
+    background-color: #483956;
+    margin-left: 339px;
+    width: 32%;
+    color: white;}
+    .heading{
+        color: black;
+        margin-top: 99px;        
+    }
+    .action-icons{
+        margin-left: 74%;
+    }
+ .main-department{
+    font-family: "Poppins";
+    background-color: #EBF6FF;
+ }   

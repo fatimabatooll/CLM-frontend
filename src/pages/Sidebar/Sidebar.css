@@ -1,0 +1,40 @@
+.drawer{
+    font-size: 16px;
+    /* font-family: "Roboto", "Helvetica", "Arial", sans-serif; */
+    font-family: 'Poppins'!important;
+   
+}
+.logout{
+position: absolute;
+font-family: 'Poppins';
+
+bottom: 50px;
+}
+.logo-main img{
+width: 185.54px;
+height: 42.09px;
+margin-top: 5px;
+margin-left: 8px;
+}
+.profile-logout {
+    border-radius: 10px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    margin-left: 26px;
+    top: 30px;
+    color: #49535f;
+}
+
+
+.profile-logout  .profile-text{
+    position: relative;
+    top: -4px;
+}
+.profile-logout  .profile-text:hover{
+
+    color: #6254B6;
+}
+.list-item{
+    font-family: 'Poppins'!important;
+
+}

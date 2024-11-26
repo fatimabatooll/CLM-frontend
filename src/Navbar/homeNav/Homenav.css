@@ -1,0 +1,91 @@
+/* .menuItem{
+    position: absolute;
+    top: 3%;
+    right: 1%;
+
+}
+.usericon{
+    position: absolute;
+    top: 1%;
+
+    right: 10%;
+}
+.username{
+    display: flex;
+    gap: 6px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: #07224D;
+}
+.user-icon-arrow{
+margin-top: 3px;    
+}
+.admin{
+    color: #92A7BE;
+    margin-top: 3px;
+    font-family: 'Poppins';
+    font-size: 14px;
+}
+.IoIosArrowDown{
+    color: #07224D;
+}
+.arrow{
+    width: 15px;
+    height: 15px;
+}
+.fixednav{
+    margin-left: 20%;
+
+}
+
+
+.main-heading{
+    font-size: 25px;
+    color: #07224D;
+    font-family: 'Poppins';
+    font-weight: 600;
+    margin-top: 14px;
+margin-left: 60px;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px){
+
+    .main-heading{
+        font-size: 25px;
+        color: #07224D;
+        font-family: 'Poppins';
+        font-weight: 600;
+        margin-top: 14px;
+    margin-left: 90%;
+    }
+    .menuItem{
+        position: absolute;
+        top: 3%;
+        right: 1%;
+    
+    }
+    .usericon{
+        position: absolute;
+        top: 1%;
+        right: 14%;
+    }
+} */
+
+.fixedHomeNav {
+    padding-top: 10px;
+    background-color: #fff;
+    height: 80px;
+    width: 100%;
+padding-left: 30px;
+}
+.main-heading{
+    padding-left: 165px;
+    font-size: 26px;
+    margin-top: 12px;
+
+}
+.admin{
+    color: #92A7BE;
+    font-family: 'Poppins';
+    font-size: 14px;
+}

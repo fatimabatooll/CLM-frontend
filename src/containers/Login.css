@@ -1,0 +1,73 @@
+.main-login {
+    background-color: #EBF6FF;
+    width: auto;
+    gap: 30px;
+    padding-bottom: 15px;
+    height: 100vh;
+    font-family: 'Poppins';
+}
+
+.login-heading{
+    color: #8A8A95;
+    font-size: 16px;
+    line-height: 19.2px;
+    font-family: 'Poppins';
+}
+.main-heading-login{
+    font-size: 25px;
+    font-weight: 600;
+}
+.login-form{
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    margin-left: 10%;
+    width: 80%;
+  
+}
+.main-form{
+    position: relative;
+    top: 5%;
+}
+.submit-login{
+    background-color: #6254B6;
+}
+.docimg{
+    width: 75%;  
+    max-width: auto;
+    margin-top: 12px;  
+}
+.docvault{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%; }
+    .form-img-main{
+        display: flex;
+        justify-content: center;    
+    }
+    
+    .form-img-main img {
+        width: 40%;
+        /* margin-right: 5%; */
+    }
+        @media screen and (min-width: 769px) and (max-width: 1200px){
+            .docimg{
+                width: 100%;  
+                margin-right: 10px;
+            
+            }
+            .login-form{
+                background-color: #fff;
+                border-radius: 15px;
+                padding: 5px 20px 5px 20px;
+                margin-left: 0;
+
+                width: 100%;
+              
+            }
+            .main-login{
+                padding-bottom: 0;
+            }
+
+        }

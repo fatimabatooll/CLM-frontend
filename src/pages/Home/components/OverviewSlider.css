@@ -1,0 +1,33 @@
+/* OverviewSlider.css */
+
+/* Container for each item in the slider */
+.overview__item {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Style the image on the left side */
+  .overview__item__column--media {
+    flex: 1; /* Make the image take up the left side */
+    padding: 20px; /* Adjust padding as needed */
+  }
+  
+  /* Style the heading and description on the right side */
+  .overview__item__column--description {
+    flex: 1; /* Make the text take up the right side */
+    padding: 20px; /* Adjust padding as needed */
+  }
+  
+  /* Style the heading */
+  .section-title--overview-slider {
+    font-size: 24px; /* Adjust font size as needed */
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the description */
+  .section-subtitle--overview-slider {
+    font-size: 16px; /* Adjust font size as needed */
+    color: #333; /* Adjust text color as needed */
+  }
+  
